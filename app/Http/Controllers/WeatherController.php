@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Services\WeatherService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class WeatherController extends Controller
 {
