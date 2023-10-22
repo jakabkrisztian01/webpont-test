@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('weather', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('city_id')->constrained();
+            $table->float('latitude');
+            $table->float('longitude');
+            $table->float('temperature');
+            $table->integer('pressure');
+            $table->integer('humidity');
+            $table->float('min_temperature');
+            $table->float('max_temperature');
             $table->timestamps();
         });
     }
